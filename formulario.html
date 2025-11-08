@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <h2> Formulario de contacto</h2>
+    <form> 
+        <label for="nombre">nombre</label><br>
+        <input type="text" id="nombre"name="nombre" required><br>
+
+        <label for="apellido">apellido</label><br>
+        <input type="text" id ="apellido"name="apellido" required><br>
+
+        <label for="tipo">tipos de identificacion:</label><br>
+        <select id = "tipo" name="tipo" readonly >
+            <option value=""seleciones...></option>
+            <option value="CC" >cedula de ciudadania(cc)</option>
+            <option value="TI" >tarjeta de identidad(TI)</option>
+            <option value="PA" >pasaporte(PA)</option>
+        </select><br><br>
+
+        <label for="fecha">fecha de nacimiento:</label><br>
+        <input type="date " id ="fecha "name="fecha" required><br>
+    
+        <label for="numero de celular"></label><br>
+        <input type="text" id ="celular"name="celular" pattern="[0,9]{10}" placeholder="ejp:3215631580" required><br><br>
+
+        <label>
+            <input type="text" id ="check de polotica de tratamiento" required><br>
+        </label>
+
+        <button type="submit">ENVIAR</button>
+        
+    </form>
+<body>
+
+    
+</body>
+</html>
